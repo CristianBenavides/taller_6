@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ordenador">
+  <ClassDiagramComponents>
+    <Class name="Ordenador" package="" visibility="public" xPosition="535.0" yPosition="101.0">
+      <Fields>
+        <Field name="Codigo" type="long" visibility="private"/>
+        <Field name="Precio" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigo" returnType="long" visibility="public"/>
+        <Method name="getPrecio" returnType="Double" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="long" name="codigo"/>
+        </Method>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Portatil" package="" visibility="public" xPosition="311.0" yPosition="425.0">
+      <Fields>
+        <Field name="Eslogan" type="String" visibility="private"/>
+        <Field name="Peso" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEslogan" returnType="String" visibility="public"/>
+        <Method name="getPeso" returnType="Double" visibility="public"/>
+        <Method name="setEslogan" returnType="void" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SobreMesa" package="" visibility="public" xPosition="795.0" yPosition="440.0">
+      <Fields>
+        <Field name="Eslogan" type="String" visibility="private"/>
+        <Field name="descripcion_tipo_de_torre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEslogan" returnType="String" visibility="public"/>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setEslogan" returnType="void" visibility="public">
+          <Argument type="String" name="Eslogan"/>
+        </Method>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="hereda" source="SobreMesa" target="Ordenador"/>
+    <IsRelation name="hereda" source="Portatil" target="Ordenador"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
